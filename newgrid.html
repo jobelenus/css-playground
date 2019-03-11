@@ -1,0 +1,102 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="meyer.reset.css">
+    <style type="text/css">
+
+      body {
+        background-color: white;
+      }
+
+      header {
+        background-color: red;
+        grid-area: header;
+      }
+
+      header h1 {
+        text-align: center;
+      }
+
+      nav {
+        background-color: blue;
+        grid-area: sidebar;
+        display: grid; 
+        grid-template-rows: 100%;
+      }
+      nav ul {
+        display: grid; 
+        justify-items: left;
+        align-items: center;
+      }
+      nav li {
+        display: block;
+      }
+
+      main {
+        background-color: black;
+        color: white;
+        grid-area: content;
+      }
+
+      footer {
+        background-color: green;
+        grid-area: footer;
+        display: grid;
+        grid-auto-columns: 1fr;
+      }
+
+      footer ul {
+        display: grid;
+        grid-auto-flow: column;
+        justify-items: center;
+        align-items: left;
+      }
+
+      footer li {
+        display: block;
+      }
+
+      body {
+        display: grid;
+        min-height: 100%;
+        grid-template-rows: 5rem 1fr 7rem;
+        grid-template-columns: 15rem 1fr;
+        grid-template-areas: "header header"
+                             "sidebar content"
+                             "footer footer";
+      }
+    </style>
+    <title>Testing!</title>
+  </head>
+  <body>
+    <header>
+      <h1>Testing!</h1>
+    </header>
+    
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>is</li>
+        <li>where</li>
+        <li>the</li>
+        <li>heart</li>
+        <li>is</li>
+      </ul>
+    </nav>
+
+    <main>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in lacus nunc. Suspendisse lacinia sagittis blandit. Cras eleifend luctus pharetra. Sed tincidunt orci mauris, a cursus libero pretium vitae. Phasellus dignissim eros a feugiat blandit. Pellentesque varius vestibulum placerat. Suspendisse dapibus mi vel nisi vehicula, eu volutpat nisl ornare. Aenean iaculis tempus velit vel vestibulum. Nullam ante nunc, dapibus commodo gravida vel, tempor id mauris. Praesent tellus purus, porttitor non porttitor in, sodales non massa.</p>
+      <p>Etiam posuere magna magna, in molestie diam sollicitudin ac. Aenean in lectus at eros faucibus sagittis sit amet vel justo. Nullam ac tellus ac nulla cursus pulvinar ut non augue. In quis accumsan tellus. Donec non eros ac ex elementum elementum sed ac odio. Curabitur maximus ligula hendrerit augue fermentum gravida. Ut tempus eu sapien pellentesque lobortis. Vestibulum quis ipsum fringilla, semper eros non, porta felis. Fusce auctor vulputate sem, quis fermentum metus condimentum non. Nulla pellentesque nec lectus vitae dignissim. Proin sit amet mi sapien. Donec id tortor vulputate, pharetra est a, pretium nisi. In hac habitasse platea dictumst.
+      <p>Nullam tempus elit quam, in vehicula neque pulvinar sagittis. Aliquam euismod ullamcorper lorem ac condimentum. Praesent congue auctor elit, eu imperdiet justo tincidunt ut. Morbi purus nisl, aliquet vitae malesuada at, volutpat vel sapien. Nulla elit sapien, viverra non arcu nec, condimentum venenatis lectus. Proin ornare orci odio, tincidunt rhoncus ante rhoncus eu. Nulla massa sapien, luctus eget purus id, placerat dictum nulla. Nunc vel cursus mauris. Duis consectetur sed felis vitae sagittis.</p>
+      <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam eget ornare massa. Sed ultrices imperdiet lacus, ac ultrices enim egestas eget. Proin porttitor in ligula ut pretium. Sed quis interdum odio. Donec quis luctus sem. Donec fringilla purus id ligula rhoncus, at semper felis lobortis. Mauris tincidunt, libero porta faucibus ultrices, lorem ex volutpat lorem, quis porttitor lorem quam eget ligula. Mauris eleifend nec velit in aliquet. Duis faucibus arcu ut ullamcorper tristique.</p>
+      <p>Etiam at elit justo. Duis in lectus et ante laoreet condimentum. Nunc fringilla pulvinar maximus. Mauris suscipit, elit nec ornare varius, justo nunc vestibulum massa, ac suscipit nulla orci sed sem. Vivamus mollis libero et magna laoreet lacinia. Vivamus ullamcorper auctor nibh, id blandit ipsum sagittis sit amet. Suspendisse sit amet porta justo. Maecenas bibendum felis id tortor imperdiet, non imperdiet odio semper. In nec neque consectetur, eleifend neque ut, bibendum orci. Vestibulum nec velit eget odio varius maximus.</p>
+    </main>
+
+    <footer>
+      <ul>
+        <li>Thanks</li>
+        <li>for</li>
+        <li>coming.</li>
+      </ul>
+    </footer>
+  </body>
+</html>
